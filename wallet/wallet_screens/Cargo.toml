@@ -1,0 +1,34 @@
+[package]
+name = "wallet_screens"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+web-sys = { workspace = true }
+yew = { workspace = true }
+yew-router = { workspace = true }
+yewdux = { workspace = true }
+serde = { workspace = true }
+gloo-console = { workspace = true }
+qrcode-generator = "4.1.9"
+ethers = { workspace = true }
+chrono = { workspace = true }
+wasm-bindgen-futures = "0.4.42"
+base64 = "0.22.1"
+rand = "0.8.5"
+wallet_api = { path = "../wallet_api" }
+uuid = { workspace = true }
+reqwest = { workspace = true }
+app_config = { path = "../../app_config" }
+gloo-timers = { workspace = true }
+log = { workspace = true }
+anyhow = { workspace = true }
+async-trait = { workspace = true }
+
+aes = "0.7.4"
+block-modes = { version = "0.8.1", features = ["std"] }
+ring = "0.16.20"
+
+rust_decimal = { workspace = true }
+rust_decimal_macros = { workspace = true }
+serde_json = { workspace = true }

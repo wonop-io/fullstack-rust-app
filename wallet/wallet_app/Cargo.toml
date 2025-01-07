@@ -1,0 +1,20 @@
+[package]
+name = "wallet_app"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+chrono = { workspace = true }
+serde = { workspace = true }
+uuid = { workspace = true }
+validator = { workspace = true }
+log = { workspace = true }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-cookies = { workspace = true }
+axum-extra = { workspace = true }
+sqlx = { workspace = true }
+serde_json = { workspace = true }
+wallet_api = { path = "../../wallet/wallet_api" }
+auth_app = { path = "../../auth/auth_app" }
+app_config = { path = "../../app_config" }

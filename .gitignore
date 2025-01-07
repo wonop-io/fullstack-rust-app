@@ -1,0 +1,13 @@
+*.db
+target/
+target/**
+dist/
+dist/**
+**/dist/
+**/dist/**
+postgres.db/
+postgres.db/**
+redis.db/
+redis.db/**
+.course/
+.course/**

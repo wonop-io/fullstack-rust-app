@@ -1,0 +1,13 @@
+[package]
+name = "auth_cli"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+auth_api = { path = "../auth_api" }
+sqlx = { workspace = true }
+dotenvy = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+tokio = { workspace = true }
+clap = { workspace = true }

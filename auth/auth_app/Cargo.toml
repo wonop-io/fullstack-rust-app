@@ -1,0 +1,28 @@
+[package]
+name = "auth_app"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+base64 = { workspace = true }
+chrono = { workspace = true }
+futures = { workspace = true }
+redis = { workspace = true }
+serde = { workspace = true }
+uuid = { workspace = true }
+validator = { workspace = true }
+log = { workspace = true }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-cookies = { workspace = true }
+axum-extra = { workspace = true }
+sqlx = { workspace = true }
+auth_api = { path = "../../auth/auth_api", features = ["backend"] }
+app_config = { path = "../../app_config", features = ["backend"] }
+tower-sessions-core = { workspace = true }
+tower-sessions = { workspace = true }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+rmp-serde = { workspace = true }
+tokio = { workspace = true }
+time = { workspace = true }

@@ -1,0 +1,16 @@
+[package]
+name = "wallet_api"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+uuid = { workspace = true }
+serde = { workspace = true }
+chrono = { workspace = true }
+ethers = { workspace = true }
+sqlx = { version = "0.6", optional = true }
+rust_decimal = { workspace = true }
+rust_decimal_macros = { workspace = true }
+
+[features]
+backend = ["dep:sqlx"]

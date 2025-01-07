@@ -1,0 +1,17 @@
+[package]
+name = "app_config"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+wonopui = { workspace = true }
+yew = { workspace = true }
+yew-router = { workspace = true }
+web-sys = { workspace = true }
+log = { workspace = true }
+serde = { workspace = true }
+axum = { workspace = true, optional = true }
+uuid = { workspace = true }
+
+[features]
+backend = ["dep:axum"]
